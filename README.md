@@ -1,6 +1,7 @@
 #데이터 저장 방법
 --
 Android는 지속적인 애플리케이션 데이터를 저장하는 여러 옵션을 제공합니다. 선택하는 솔루션은 데이터를 해당 애플리케이션 전용 데이터로 할지 다른 애플리케이션(및 사용자)이 액세스할 수 있도록 할지, 그리고 데이터가 필요로 하는 공간 등 특정 필요에 따라 다릅니다.
+[https://developer.android.com/guide/topics/data/data-storage.html?hl=ko#pref](https://developer.android.com/guide/topics/data/data-storage.html?hl=ko#pref)
 
 1. 공유 기본 설정 : 전용 원시 데이터를 키-값 쌍으로 저장합니다.
 2. 내부 저장소 : 전용 데이터를 기기 메모리에 저장합니다.

@@ -1,10 +1,12 @@
 package com.kyuwankim.android.sharedpreference;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
@@ -14,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editName;
     Switch switchShuffle;
 
+    Button btn;
     RelativeLayout layout;
 
     PropertyUtil propertyUtil;
@@ -28,7 +31,16 @@ public class MainActivity extends AppCompatActivity {
         editName = (EditText) findViewById(R.id.editText);
         switchShuffle = (Switch) findViewById(R.id.switch1);
         layout = (RelativeLayout) findViewById(R.id.layout2);
+        btn = (Button) findViewById(R.id.button2);
 
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, SharedPreferenceActivity.class);
+                startActivity(intent);
+            }
+        });
         // firstOpen 체크가 되어 있으면 도움말 레이아웃을 닫아준다
         if("false".equals(propertyUtil.getProperty("firstOpen"))){
             layout.setVisibility(View.GONE);
