@@ -59,6 +59,8 @@ public void saveSetting(View view){
 ##Properies
 해쉬맵과 사용방법은 거의 차이가 없지만 파일 입출력 기능을 지원하며 저장할 수 있는 값의 타입은 String으로만 지정할 수 있다. 보통 Properties 클래스는 자바 어플리케이션에서 사용될 상수를 텍스트 파일로 미리 작성한 뒤 필요한 곳에서 그 파일을 읽어오는데 사용된다.
 
+출처 - [http://noritersand.tistory.com/61](http://noritersand.tistory.com/61)
+
 	public class PropertyUtil {
     private String PROP_FILE = "sp.properties";
     private String internalStorage;
@@ -115,3 +117,5 @@ public void saveSetting(View view){
 
     }
 	}
+	
+
